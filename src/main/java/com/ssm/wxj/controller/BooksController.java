@@ -2,12 +2,15 @@ package com.ssm.wxj.controller;
 
 import com.ssm.wxj.entity.Books;
 import com.ssm.wxj.service.BooksService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+import java.lang.invoke.MethodHandles;
 
 /**
  * (Books)表控制层
@@ -18,6 +21,9 @@ import javax.annotation.Resource;
 @RestController
 @RequestMapping("books")
 public class BooksController {
+
+    final static Logger logger = LoggerFactory.getLogger(MethodHandles.lookup().lookupClass());
+
     /**
      * 服务对象
      */

@@ -20,6 +20,10 @@
 		<setting name="defaultStatementTimeout" value="25000" />
 		<!-- 是否启用下划线与驼峰式命名规则的映射（如first_name => firstName） -->
 		<setting name="mapUnderscoreToCamelCase" value="true" />
+
+		<!--指定 MyBatis 所用日志的具体实现，未指定时将自动查找。NO_LOGGING不打印日志-->
+		<setting name="logImpl" value="SLF4J"/>
+
 	</settings>
 
 

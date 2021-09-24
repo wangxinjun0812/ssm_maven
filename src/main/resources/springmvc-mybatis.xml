@@ -22,6 +22,9 @@
         <property name="maxWait" value="${druid.maxWait}" />
         <property name="poolPreparedStatements" value="${druid.poolPreparedStatements}" />
         <property name="maxOpenPreparedStatements" value="${druid.maxOpenPreparedStatements}" />
+
+        <!-- 开启Druid的监控统计功能 -->
+        <property name="filters" value="stat" />
     </bean>
 
     <!--配置SqlSessionFactory对象 -->
